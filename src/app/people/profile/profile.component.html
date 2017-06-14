@@ -1,0 +1,13 @@
+<div class="user-profile">
+    <div class="avatar">
+        <img src="{{ person.pic }}" alt="{{person.name}}'s profile">
+    </div>
+    <div class="profile">
+        <span>
+            <strong>{{ person.name }}</strong><br/>
+            <i>{{ person.status }}</i>
+        </span>
+        <span *ngIf="person.github"><i class="fa fa-github"></i> <a href="{{ person.github.url }}">{{ person.github.name }}</a></span>
+        <span *ngIf="person.jsfiddle"><i class="fa fa-jsfiddle"></i> <a href="{{ person.jsfiddle.url }}">{{ person.jsfiddle.name }}</a></span>
+    </div>
+</div>

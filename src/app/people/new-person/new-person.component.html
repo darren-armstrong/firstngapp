@@ -1,0 +1,26 @@
+<form #f="ngForm" (ngSubmit)="onSubmit(f.value)">
+    <div>
+        <label>Profile Picture:</label>
+        <input type="file" ngModel name="pic">
+    </div>
+    <div>
+        <label>Name:</label>
+        <input type="text" ngModel name="name">
+    </div>
+    <div>
+        <label>Status:</label>
+        <input type="text" ngModel name="status">
+    </div>
+    <div ngModelGroup="github">
+        <label>Github:</label>
+        <input type="text" ngModel name="name">
+        <input type="text" ngModel name="url">
+    </div>
+    <div ngModelGroup="jsfiddle">
+        <label>JSFiddle</label>
+        <input type="text" ngModel name="name">
+        <input type="text" ngModel name="url">
+    </div>
+    <button type="submit">Save</button>
+    <button>Cancel</button>
+</form>
