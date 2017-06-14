@@ -1,0 +1,27 @@
+.user-profile{
+    width:50%;
+    border: 1px solid #ccc;
+    margin: auto;
+    margin-bottom:15px;
+
+    clear:both;
+}
+
+.avatar{
+    width:100%;
+    border:1px solid gray;
+    margin: auto;
+}
+
+.profile{
+    margin-left:10px;
+    display: inline-block;
+}
+.avatar img {
+    width:25%;
+}
+
+span{
+    display: block;
+    padding-bottom: 5px;
+}
