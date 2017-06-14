@@ -8,6 +8,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class NewPersonComponent implements OnInit {
 
   @Output() onSubmitted:EventEmitter<any> = new EventEmitter();
+  @Output() onCancel:EventEmitter<any> = new EventEmitter();
 
   constructor() { }
 
@@ -16,6 +17,10 @@ export class NewPersonComponent implements OnInit {
 
   onSubmit(newPerson){
     this.onSubmitted.emit(newPerson);
+  }
+
+  cancel(){
+    this.onCancel.emit();
   }
 
 }

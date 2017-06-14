@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
     styleUrls: ['./people.component.css']
 })
 export class PeopleComponent implements OnInit {
+    isAddingNewPerson:boolean = false;
     people = [];
 
     constructor(){}
@@ -38,5 +39,6 @@ export class PeopleComponent implements OnInit {
 
     onSubmit(newPerson){
         this.people.push(newPerson);
+        this.isAddingNewPerson = false
     }
 }

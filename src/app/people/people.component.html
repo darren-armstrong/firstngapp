@@ -1,6 +1,6 @@
-<button>Add new person</button>
+<button *ngIf="!isAddingNewPerson" (click)="isAddingNewPerson = !isAddingNewPerson">Add new person</button>
 
-<new-person (onSubmitted)="onSubmit($event)"></new-person>
+<new-person *ngIf="isAddingNewPerson" (onSubmitted)="onSubmit($event)" (onCancel)="isAddingNewPerson = false"></new-person>
 
 <hr/>
 
